@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #af67e9;
+}
+
+.wrapper {
+  width: 327px;
+  margin: 40px auto;
+}
+
+.container {
+  position: relative;
+}
+
+img {
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
+header {
+  width: 237px;
+  margin: auto;
+  height: 180px;
+  background-image: url("../images/illustration-woman-online-mobile.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 5;
+}
+
+.headerPrimary {
+  background-image: url(../images/bg-pattern-mobile.svg);
+  width: 100%;
+  height: 100px;
+  background-size: 87% 95%;
+  position: relative;
+  background-repeat: no-repeat;
+  top: 92px;
+  background-position: 100%;
+}
+
+main {
+  width: 327px;
+  margin: auto;
+  background-color: white;
+  position: absolute;
+  z-index: 2;
+  top: 96px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.primary {
+  width: 279px;
+  margin: auto;
+}
+
+h1 {
+  padding-top: 140px;
+  text-align: center;
+}
+
+.faq {
+  /* width: 100%; */
+  margin-top: 20px;
+}
+
+summary {
+  width: 90%;
+  margin: auto;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary:after {
+  content: url("../images/icon-arrow-down.svg");
+  float: right;
+}
+
+details {
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+p {
+  margin-top: 20px;
+}
