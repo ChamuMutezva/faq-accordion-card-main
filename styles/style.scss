@@ -124,6 +124,11 @@ p {
     font-weight: 400;
     margin: 10px auto;
 }
+summary:hover {
+    color: hsl(14, 88%, 65%);
+    margin: auto;
+    cursor: pointer;
+}
 
 @media screen and (min-width: 980px) {
     main {

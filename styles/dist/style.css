@@ -123,6 +123,12 @@ p {
   margin: 10px auto;
 }
 
+summary:hover {
+  color: #f47c57;
+  margin: auto;
+  cursor: pointer;
+}
+
 @media screen and (min-width: 980px) {
   main {
     width: 920px;
