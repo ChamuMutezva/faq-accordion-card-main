@@ -6,7 +6,13 @@
 
 body {
   font-family: "Kumbh Sans", sans-serif;
-  background-color: #af67e9;
+  font-size: 12px;
+  background: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
+  height: 110vh;
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 100% 124%;
 }
 
 .wrapper {
@@ -27,34 +33,47 @@ img {
 header {
   width: 237px;
   margin: auto;
-  height: 180px;
-  background-image: url("../images/illustration-woman-online-mobile.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
+  /*  height: 180px;
+  background-image: url("../images/illustration-woman-online-mobile.svg"); 
+   background-size: contain;
+   background-repeat: no-repeat; */
   position: relative;
   z-index: 5;
 }
 
 .headerPrimary {
-  background-image: url(../images/bg-pattern-mobile.svg);
-  width: 100%;
-  height: 100px;
+  /*  background-image: url(../images/bg-pattern-mobile.svg);   
   background-size: 87% 95%;
+   background-position: 100%;
+    background-repeat: no-repeat;
+  */
+  height: 100px;
+  width: 100%;
   position: relative;
+  top: 26px;
+}
+
+.headerPrimary::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 200px;
+  top: 93px;
+  left: 20px;
   background-repeat: no-repeat;
-  top: 92px;
-  background-position: 100%;
+  background-image: url("../images/bg-pattern-mobile.svg");
 }
 
 main {
   width: 327px;
   margin: auto;
   background-color: white;
-  position: absolute;
+  position: relative;
   z-index: 2;
-  top: 96px;
+  top: 20px;
   border-radius: 20px;
   margin-bottom: 30px;
+  padding-bottom: 40px;
 }
 
 .primary {
@@ -65,6 +84,7 @@ main {
 h1 {
   padding-top: 140px;
   text-align: center;
+  font-size: 2.6rem;
 }
 
 .faq {
@@ -73,7 +93,6 @@ h1 {
 }
 
 summary {
-  width: 90%;
   margin: auto;
 }
 
@@ -92,5 +111,60 @@ details {
 }
 
 p {
-  margin-top: 20px;
+  line-height: 18px;
+  font-weight: 400;
+  margin: 10px auto;
+}
+
+@media screen and (min-width: 980px) {
+  main {
+    width: 920px;
+    margin: auto;
+    top: -84px;
+  }
+
+  .wrapper {
+    width: 100%;
+  }
+
+  header {
+    width: 237px;
+    margin: auto;
+    height: 180px;
+    /*  background-image: url("../images/illustration-woman-online-desktop.svg"); */
+    right: 327px;
+    top: 160px;
+  }
+
+  .primary {
+    width: 375px;
+    margin-right: 110px;
+  }
+
+  .headerPrimary {
+    /* background-image: url(../images/bg-pattern-desktop.svg); */
+    top: 4px;
+    left: -146px;
+  }
+
+  img {
+    width: 200%;
+  }
+
+  .headerPrimary::after {
+    top: 380px;
+    left: -53px;
+    transform: scale(3.5);
+  }
+
+  .headerPrimary::before {
+    left: 300px;
+    top: -18px;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 280px;
+    transform: rotate(185deg);
+    background-image: url("../images/bg-pattern-desktop.svg");
+  }
 }
