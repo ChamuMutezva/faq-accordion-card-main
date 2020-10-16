@@ -1,50 +1,59 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
 body {
   font-family: 'Kumbh Sans', sans-serif;
   font-size: 12px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#B068E9), to(#6463E7));
   background: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
   height: 110vh;
   background-position: center;
   position: relative;
   background-repeat: no-repeat;
-  background-size: 100% 124%; }
+  background-size: 100% 124%;
+}
 
 .wrapper {
   width: 327px;
-  margin: 40px auto; }
+  margin: 40px auto;
+}
 
 .container {
-  position: relative; }
+  position: relative;
+}
 
 img {
   display: block;
   margin: auto;
-  width: 100%; }
+  width: 100%;
+}
 
 header {
   width: 237px;
   margin: auto;
- /*  height: 180px;
-background-image: url("../images/illustration-woman-online-mobile.svg"); 
- background-size: contain;
- background-repeat: no-repeat; */
+  /*  height: 180px;
+   background-image: url("../images/illustration-woman-online-mobile.svg"); 
+    background-size: contain;
+    background-repeat: no-repeat; */
   position: relative;
-  z-index: 5; }
+  z-index: 5;
+}
 
 .headerPrimary {
   /*  background-image: url(../images/bg-pattern-mobile.svg);   
-  background-size: 87% 95%;
-   background-position: 100%;
-    background-repeat: no-repeat;
-  */
+    background-size: 87% 95%;
+     background-position: 100%;
+      background-repeat: no-repeat;
+    */
   height: 100px;
   width: 100%;
   position: relative;
-  top: 26px; }
+  top: 26px;
+}
 
 .headerPrimary::after {
   position: absolute;
@@ -54,7 +63,8 @@ background-image: url("../images/illustration-woman-online-mobile.svg");
   top: 93px;
   left: 20px;
   background-repeat: no-repeat;
-  background-image: url("../images/bg-pattern-mobile.svg"); }
+  background-image: url("../images/bg-pattern-mobile.svg");
+}
 
 main {
   width: 327px;
@@ -65,85 +75,99 @@ main {
   top: 20px;
   border-radius: 20px;
   margin-bottom: 30px;
-  padding-bottom: 40px; }
+  padding-bottom: 40px;
+}
 
 .primary {
   width: 279px;
-  margin: auto; }
+  margin: auto;
+}
 
 h1 {
   padding-top: 140px;
   text-align: center;
-  font-size: 2.6rem; }
+  font-size: 2.6rem;
+}
 
 .faq {
   /* width: 100%; */
-  margin-top: 20px; }
+  margin-top: 20px;
+}
 
 summary {
-  margin: auto; }
+  margin: auto;
+}
 
 summary::-webkit-details-marker {
-  display: none; }
+  display: none;
+}
 
 summary:after {
   content: url("../images/icon-arrow-down.svg");
-  float: right; }
+  float: right;
+}
 
 details[open] summary:after {
   content: url("../images/icon-arrow-down.svg");
   display: inline-block;
-  transform: rotate(180deg);
-  /* filter: invert(200%) sepia(200%) saturate(200%) hue-rotate(288deg) brightness(102%) contrast(102%); */ }
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  /* filter: invert(200%) sepia(200%) saturate(200%) hue-rotate(288deg) brightness(102%) contrast(102%); */
+}
 
 details {
   margin-bottom: 20px;
-  padding: 10px; }
+  padding: 10px;
+}
 
 p {
   line-height: 18px;
   font-weight: 400;
-  margin: 10px auto; }
+  margin: 10px auto;
+}
 
 summary:hover {
   color: #f47c57;
   margin: auto;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 @media screen and (min-width: 980px) {
   main {
-    width: 920px;
+    width: 65%;
     margin: auto;
-    top: -84px; }
-
+    top: -78px;
+  }
   .wrapper {
-    width: 100%; }
-
+    width: 100%;
+  }
   header {
     width: 237px;
     margin: auto;
     height: 180px;
     /*  background-image: url("../images/illustration-woman-online-desktop.svg"); */
     right: 327px;
-    top: 160px; }
-
+    top: 160px;
+  }
   .primary {
     width: 375px;
-    margin-right: 110px; }
-
+    margin-right: 110px;
+    padding-bottom: 100px;
+  }
   .headerPrimary {
     /* background-image: url(../images/bg-pattern-desktop.svg); */
     top: 4px;
-    left: -146px; }
-
+    left: -146px;
+  }
   img {
-    width: 200%; }
-
+    width: 200%;
+  }
   .headerPrimary::after {
     top: 380px;
     left: -53px;
-    transform: scale(3.5); }
-
+    -webkit-transform: scale(3.5);
+            transform: scale(3.5);
+  }
   .headerPrimary::before {
     left: 300px;
     top: -18px;
@@ -151,7 +175,14 @@ summary:hover {
     position: absolute;
     width: 100%;
     height: 280px;
-    transform: rotate(185deg);
-    background-image: url("../images/bg-pattern-desktop.svg"); } }
-
+    -webkit-transform: rotate(185deg);
+            transform: rotate(185deg);
+    background-image: url("../images/bg-pattern-desktop.svg");
+  }
+  h1 {
+    padding-top: 78px;
+    margin-left: -300px;
+    font-size: 2rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */

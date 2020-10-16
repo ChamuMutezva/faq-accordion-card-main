@@ -131,9 +131,9 @@ summary:hover {
 
 @media screen and (min-width: 980px) {
   main {
-    width: 920px;
+    width: 65%;
     margin: auto;
-    top: -84px;
+    top: -78px;
   }
 
   .wrapper {
@@ -152,6 +152,7 @@ summary:hover {
   .primary {
     width: 375px;
     margin-right: 110px;
+    padding-bottom: 100px;
   }
 
   .headerPrimary {
@@ -179,5 +180,11 @@ summary:hover {
     height: 280px;
     transform: rotate(185deg);
     background-image: url("../images/bg-pattern-desktop.svg");
+  }
+
+  h1 {
+    padding-top: 78px;
+    margin-left: -300px;
+    font-size: 2rem;
   }
 }
