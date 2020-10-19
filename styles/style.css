@@ -24,6 +24,9 @@ body {
 
 .container {
   position: relative;
+  background: white;
+  margin-top: 148px;
+  border-radius: 20px;
 }
 
 img {
@@ -35,10 +38,7 @@ img {
 header {
   width: 237px;
   margin: auto;
-  /*  height: 180px;
-   background-image: url("../images/illustration-woman-online-mobile.svg"); 
-    background-size: contain;
-    background-repeat: no-repeat; */
+  top: -126px;
   position: relative;
   z-index: 5;
 }
@@ -69,13 +69,11 @@ header {
 main {
   width: 327px;
   margin: auto;
-  background-color: white;
   position: relative;
   z-index: 2;
-  top: 20px;
+  top: -100px;
   border-radius: 20px;
   margin-bottom: 30px;
-  padding-bottom: 40px;
 }
 
 .primary {
@@ -134,55 +132,84 @@ summary:hover {
 
 @media screen and (min-width: 980px) {
   main {
-    width: 65%;
-    margin: auto;
-    top: -78px;
+    width: 40%;
+    margin-right: 100px;
+    /* top: -314px; */
+    margin-top: -250px;
   }
   .wrapper {
     width: 100%;
+    margin: 129px auto;
+  }
+  .container {
+    width: 920px;
+    margin: auto;
   }
   header {
-    width: 237px;
-    margin: auto;
-    height: 180px;
-    /*  background-image: url("../images/illustration-woman-online-desktop.svg"); */
-    right: 327px;
-    top: 160px;
+    width: 472px;
+    margin-left: 26px;
+    height: 359px;
+    /* background-image: url(../images/illustration-woman-online-desktop.svg); */
+    /* right: 349px; */
+    top: 125px;
   }
   .primary {
     width: 375px;
     margin-right: 110px;
-    padding-bottom: 100px;
+    padding-bottom: 0px;
   }
   .headerPrimary {
     /* background-image: url(../images/bg-pattern-desktop.svg); */
-    top: 4px;
+    top: -50px;
     left: -146px;
   }
   img {
-    width: 200%;
+    width: 100%;
   }
   .headerPrimary::after {
     top: 380px;
-    left: -53px;
+    left: 253px;
     -webkit-transform: scale(3.5);
-            transform: scale(3.5);
+    transform: scale(3.5);
+  }
+  header::before {
+    position: absolute;
+    content: '';
+    background-image: url(../images/illustration-box-desktop.svg);
+    width: 48%;
+    height: 61%;
+    top: 105px;
+    left: -145px;
+    z-index: 4;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
   }
   .headerPrimary::before {
-    left: 300px;
-    top: -18px;
+    left: 325px;
+    top: 9px;
     content: "";
     position: absolute;
-    width: 100%;
+    width: 40%;
     height: 280px;
     -webkit-transform: rotate(185deg);
-            transform: rotate(185deg);
-    background-image: url("../images/bg-pattern-desktop.svg");
+    transform: rotate(185deg);
+    background-image: url(../images/bg-pattern-desktop.svg);
+    /* background-repeat: repeat;*/
   }
   h1 {
     padding-top: 78px;
     margin-left: -300px;
     font-size: 2rem;
+  }
+  .blocker {
+    position: relative;
+    height: 240px;
+    width: 240px;
+    background: #8f66e8;
+    z-index: 3;
+    left: -267px;
+    top: -25px;
+    border: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
