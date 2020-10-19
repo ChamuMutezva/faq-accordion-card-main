@@ -159,18 +159,25 @@ summary:hover {
     padding-bottom: 0px;
   }
   .headerPrimary {
-    /* background-image: url(../images/bg-pattern-desktop.svg); */
-    top: -50px;
+    top: -125px;
     left: -146px;
+    overflow: hidden;
+    height: 65vh;
+    width: 100%;
   }
   img {
     width: 100%;
+    margin-top: 70px;
   }
   .headerPrimary::after {
-    top: 380px;
-    left: 253px;
-    -webkit-transform: scale(3.5);
-    transform: scale(3.5);
+    top: -277px;
+    left: -500px;
+    width: 86vw;
+    height: 100vh;
+    background-image: url(../images/bg-pattern-desktop.svg);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    z-index: -1;
   }
   header::before {
     position: absolute;
@@ -184,31 +191,19 @@ summary:hover {
     background-position: 50% 0;
     background-repeat: no-repeat;
   }
-  .headerPrimary::before {
-    left: 325px;
-    top: 9px;
-    content: "";
-    position: absolute;
-    width: 40%;
-    height: 280px;
-    -webkit-transform: rotate(185deg);
-    transform: rotate(185deg);
-    background-image: url(../images/bg-pattern-desktop.svg);
-    /* background-repeat: repeat;*/
-  }
   h1 {
     padding-top: 78px;
     margin-left: -300px;
     font-size: 2rem;
   }
   .blocker {
-    position: relative;
+    position: absolute;
     height: 240px;
     width: 240px;
     background: #8f66e8;
     z-index: 3;
     left: -267px;
-    top: -25px;
+    top: 36px;
     border: none;
   }
 }
