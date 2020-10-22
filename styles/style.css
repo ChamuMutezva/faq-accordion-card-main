@@ -123,6 +123,26 @@ summary:hover {
   color: #f47c57;
   margin: auto;
   cursor: pointer;
+  -webkit-animation: fadeOut 1s;
+          animation: fadeOut 1s;
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 @media screen and (min-width: 980px) {

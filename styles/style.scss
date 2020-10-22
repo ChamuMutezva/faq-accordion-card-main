@@ -105,6 +105,7 @@ details[open] summary:after {
     content: url("../images/icon-arrow-down.svg");
     display: inline-block;
     transform: rotate(180deg);
+   
     /* filter: invert(200%) sepia(200%) saturate(200%) hue-rotate(288deg) brightness(102%) contrast(102%); */
 }
 
@@ -123,7 +124,20 @@ summary:hover {
     color: hsl(14, 88%, 65%);
     margin: auto;
     cursor: pointer;
+    animation: fadeOut 1s;
 }
+
+//animation
+@keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+    }
+  }
+  
 
 @media screen and (min-width: 980px) {
     main {

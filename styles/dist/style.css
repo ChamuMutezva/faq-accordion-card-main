@@ -120,8 +120,17 @@ summary:hover {
   color: #f47c57;
   margin: auto;
   cursor: pointer;
+  animation: fadeOut 1s;
 }
 
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 @media screen and (min-width: 980px) {
   main {
     width: 40%;
