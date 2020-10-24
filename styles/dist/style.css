@@ -117,6 +117,7 @@ p {
 }
 
 summary:hover {
+  font-weight: 700;
   color: #f47c57;
   margin: auto;
   cursor: pointer;
